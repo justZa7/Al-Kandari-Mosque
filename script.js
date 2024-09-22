@@ -8,3 +8,10 @@ navBtn.addEventListener("click", () => {
     navBtn.classList.toggle("ri-menu-line", !isNavOpen);
     navBtn.classList.toggle("ri-close-line", isNavOpen);
 })
+
+navLinks.addEventListener("click", () => {
+    isNavOpen = false;
+    navLinks.style.display = "none";
+    navBtn.classList.toggle("ri-menu-line", true);
+    navBtn.classList.toggle("ri-close-line", false);
+})
