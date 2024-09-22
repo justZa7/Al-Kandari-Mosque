@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body>
+    <main class="h-[100vh] " id="hero">
+        <nav class=" top-0 left-0 w-full p-2 border-b-2 md:border-none md:px-10 md:py-8 lg:px-44">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <img
+                        src="./svg/Vector.svg"
+                        class="w-10"
+                    >
+                    <div>
+                        <h4 class="text-sm font-thin">المسجد الكندري</h4>
+                        <h2 class="text-xl font-semibold">Masjid Al-Kandari</h2>
+                    </div>
+                </div>
+                <!-- expanded navlink -->
+                <ul class="hidden md:flex gap-10 text-lg">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#kegiatan">Kegiatan</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#kontak">kontak</a></li>        
+                </ul>
+                <div class="md:hidden">
+                    <button class="ri-menu-line text-3xl" id="nav-btn"></button>
+                </div>
+            </div>
+        </nav>
+        <!-- closed navlink -->
+        <ul class="flex-col top-20 w-full gap-3 p-3 hidden md:hidden items-center text-lg font-medium pt-7 backdrop-blur-sm" id="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">kontak</a></li>
+        </ul>
+        <!-- hero -->
+        <div class="text-center md:max-w-3xl lg:max-w-4xl m-auto py-20">
+            <h1 class="text-4xl font-bold text-center md:text-6xl">
+                Temukan kedamaian melalui dekat dengan Tuhan
+            </h1>
+            <p class="px-2 my-8 text-base mx-auto md:text-xl md:max-w-3xl ">
+                masjid ini bukan hanya sebagai tempat ibadah yang nyaman, tapi juga jadi tempat berbagai kegiatan, 
+                memupuk persaudaraan hingga hingga membangkitkan perekonomian, atau tempat apapun yang berkaitan dengan kumatan.
+            </p>
+            <div class="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-14 ">
+                <a href="#" class="border-2 px-3 py-2 rounded-lg">Baca Selengkapnya</a>
+                <a href="#" class="flex items-center gap-1 bg-white rounded-lg text-black py-1 px-5">
+                    <i class="ri-whatsapp-line text-2xl text-black"></i>
+                    <span class="text-black">Hubungi Kami</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-36" id="blog">
+        <div>
+            <div class="text-center">
+                <h3 class="text-slate-800 font-semibold text-sm md:text-lg">
+                    FITUR
+                </h3>
+                <h1 class="text-black text-3xl font-semibold max-w-sm mx-auto my-10 md:text-5xl md:max-w-xl md:mb-20 md:font-bold">
+                    Semua Kenyamanan dalam Satu Masjid
+                </h1>
+            </div>
+            <div class="grid grid-cols-1 gap-10 px-0 md:grid-cols-2 md:gap-5 lg:grid-cols-4 m-auto">
+                <div class="flex flex-col items-center gap-5">
+                    <img
+                        src="./svg/substract1.svg"
+                        class="m-auto"    
+                    >
+                    <p class="text-black max-w-[15rem] text-center">
+                        Imam Hafidz Qur'an dan Menguasai Berbagai Nagham
+                    </p>
+                </div>
+                <div class="flex flex-col items-center gap-5">
+                    <img
+                        src="./svg/substract2.svg"
+                        class="m-auto"    
+                    >
+                    <p class="text-black max-w-[15rem] text-center">
+                        Masjid Dilengkapi AC, Memastikan Ruangan Sejuk
+                    </p>
+                </div>
+                <div class="flex flex-col items-center gap-5">
+                    <img
+                        src="./svg/substract3.svg"
+                        class="m-auto"    
+                    >
+                    <p class="text-black max-w-[15rem] text-center">
+                        Masjid Terbuka 24 Jam dengan Jaminan Keamanan
+                    </p>
+                </div>
+                <div class="flex flex-col items-center gap-5">
+                    <img
+                        src="./svg/substract4.svg"
+                        class="m-auto"    
+                    >
+                    <p class="text-black max-w-[15rem] text-center">
+                        Menggunakan Karpet Terbaik yang Lembut Dipakai Sujud
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-36 px-8 md:px-10 lg:px-36" id="kegiata">
+        <div class="bg-[#165648] rounded-lg p-10 ">
+            <div class="text-center mb-10">
+                <h3 class="font-medium">
+                    KEGIATAN
+                </h3>
+                <h2 class="text-3xl font-semibold max-w-sm mx-auto my-10 md:text-5xl md:max-w-2xl md:mb-20 md:font-bold">
+                    Berbagi Kegiatan Menarik Yang Tersedia di Masjid
+                </h2>
+            </div>
+           <div class="grid grid-flow-row gap-2 md:grid-cols-3 mx-auto place-items-center lg:max-w-5xl lg:gap-5">
+           <div class="flex flex-col bg-slate-200 max-w-xs justify-between h-full p-5 rounded-md ">
+                    <div class="max-w-xs mb-5">
+                        <h1 class="text-black font-bold text-lg md:text-2xl">Kajian Fiqih, Kajian ibadah 4 Madzhab dan Belajar Ngaji</h1>
+                        <p class="text-black text-xs mt-2">Di setiap harinya, masjid akan melaksanakan banyak kegiatan keislaman, terbuka untuk masyarakat sekitar dan untuk umum.</p>
+                    </div>
+                    <img src="./images/pict1.jpg" alt="">
+                </div>
+                <div class="flex flex-col bg-slate-200 max-w-xs justify-between h-full p-5 rounded-md">
+                    <div class="max-w-xs">
+                        <h1 class="text-black font-bold text-lg md:text-2xl">Sembako Gratis dan Santunan Terhadap Dhuafa</h1>
+                        <p class="text-black text-xs mt-2">Tersedia paket sembako gratis dan juga rutin melaksanakan kegiatan santunan terhadap dhuafa.</p>
+                    </div>
+                    <img src="./images/pict2.jpg" alt="">
+                </div>
+                <div class="flex flex-col bg-slate-200 max-w-xs justify-between h-full p-5 rounded-md">
+                    <div class="max-w-xs">
+                        <h1 class="text-black font-bold text-lg md:text-2xl">Kajian Fiqih, Kajian ibadah 4 Madzhab dan Belajar Ngaji</h1>
+                        <p class="text-black text-xs mt-2">Masjid rutin membina jama’ah di segala usia agar memiliki keterampilan dan minat belajar yang tinggi demi masa depan yang cerah.</p>
+                    </div>
+                    <img src="./images/pict3.jpg" alt="">
+                </div>
+          </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

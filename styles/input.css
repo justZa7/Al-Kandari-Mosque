@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+#hero {
+    background: url('../images/gambar.jpg') no-repeat right;
+    background-size: cover;
+    background-color: rgba(22, 86, 72, 0.9);
+    background-blend-mode: multiply;
+}
+
